@@ -1,1 +1,1 @@
-Erasing my_first_dir
+Returning to previous wd
