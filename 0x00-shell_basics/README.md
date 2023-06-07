@@ -1,1 +1,1 @@
-Listing contents of multiple dirs
+File type
