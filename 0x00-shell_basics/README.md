@@ -1,1 +1,1 @@
-Erasing betty
+Erasing my_first_dir
