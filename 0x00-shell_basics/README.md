@@ -1,1 +1,1 @@
-Moving betty
+Erasing betty
