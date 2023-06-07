@@ -1,1 +1,1 @@
-Returning to previous wd
+Listing contents of multiple dirs
