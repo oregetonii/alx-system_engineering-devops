@@ -1,1 +1,1 @@
-Long format including hidden
+Show all with numeric group ID
