@@ -1,1 +1,1 @@
-Prints username
+Prints all groups
