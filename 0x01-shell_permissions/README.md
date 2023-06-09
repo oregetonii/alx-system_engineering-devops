@@ -1,1 +1,1 @@
-Adds execution more and more rights to hello
+Adds all other user rights to hello
