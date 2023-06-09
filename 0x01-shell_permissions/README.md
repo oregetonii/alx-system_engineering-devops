@@ -1,1 +1,1 @@
-Mirrors file permissions
+Changes permission of directories
