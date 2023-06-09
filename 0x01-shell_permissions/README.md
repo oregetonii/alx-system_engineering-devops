@@ -1,1 +1,1 @@
-Adds all other user rights to hello
+Adds nine rights to hello
