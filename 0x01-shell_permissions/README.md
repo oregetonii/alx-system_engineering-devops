@@ -1,1 +1,1 @@
-Changes permission of directories
+Creates dir with custom right
