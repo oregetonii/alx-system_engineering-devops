@@ -1,1 +1,1 @@
-Creates an empty file
+Adds execution rights to hello
