@@ -1,1 +1,1 @@
-Adds nine rights to hello
+Mirrors file permissions
