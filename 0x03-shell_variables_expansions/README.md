@@ -1,1 +1,1 @@
-Floating point number
+Instant star
