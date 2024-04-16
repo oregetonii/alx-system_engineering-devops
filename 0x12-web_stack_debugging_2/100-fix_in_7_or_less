@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Fix the given container to run as nginx user and listen on all active IPs on port 8080 in 7 lines
+
+sudo sed -i 's/#user www-data/user nginx/' /etc/nginx/nginx.conf
+sudo su - << EOF
+chown -R nginx:nginx; nginx -g daemon off; killall apache2; nginx -g daemon on;
+EOF
