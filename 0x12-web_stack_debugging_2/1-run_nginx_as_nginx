@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-
 # Fix the given container to run as nginx user and listen on all active IPs on port 8080
 
 # update nginx config file with user 'nginx'
