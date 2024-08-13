@@ -22,7 +22,7 @@ def recurse(subreddit, hot_list=None, after=None):
         params['after'] = after
 
     try:
-        response = requests.get(url,headers=headers,params=params,allow_redirects=False, timeout=30)
+        response = requests.get(url,headers=headers,params=params,allow_redirects=False)
         # Check for redirection or invalid subreddit
         if response.status_code == 302 or response.status_code != 200:
             return None
