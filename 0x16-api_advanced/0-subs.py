@@ -15,7 +15,8 @@ def number_of_subscribers(subreddit):
                'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110'
                'Safari/537.3)'}
     try:
-        response = requests.get(url, headers=headers, allow_redirects=False)
+        response = request.get(url, headers=headers, allow_redirects=False,
+                               timeout=20)
         # If the response status code is 302, it indicates a redirect
         if response.status_code == 302:
             return 0

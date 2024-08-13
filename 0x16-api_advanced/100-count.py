@@ -4,9 +4,11 @@ Funtion to count words in all hot posts of a given Reddit subreddits
 """
 import requests
 
+
 def count_words(subreddit, word_list, after=None, counts={}):
     """
-    Recursive function that queries the Reddit API, parses the title of all hot articles, and prints a sorted count of given keywords.
+    Function that queries the Reddit API, parses the title of all hot articles,
+    and hot articles, and prints a sorted count of given keywords.
     """
     if not word_list or word_list == [] or not subreddit:
         return
@@ -18,7 +20,8 @@ def count_words(subreddit, word_list, after=None, counts={}):
     if after:
         params['after'] = after
 
-    response = requests.get(url, headers=headers, params=params, allow_redirects=False)
+    response = requests.get(url, headers=headers, params=params,
+                            allow_redirects=False, timeout=30)
     if response.status_code != 200:
         return
 
@@ -38,8 +41,8 @@ def count_words(subreddit, word_list, after=None, counts={}):
     if after:
         count_words(subreddit, word_list, after, counts)
     else:
-        sorted_counts = sorted(counts.items(), key = lambda x: (-x[1],
-            x[0].lower()))
+        sorted_counts = sorted(counts.items(), key=lambda x: (-x[1],
+                               x[0].lower()))
 
         for word, count in sorted_counts:
             print(f"{word.lower()}: {count}")
